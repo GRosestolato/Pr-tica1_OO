@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println("Digite o valor de investimento inicial? ");
         investInicial = ler.nextDouble();
-        System.out.println("Digite o valor de taxa: ");
+        System.out.println("Digite o valor de taxa mensal: ");
         taxa = ler.nextDouble();
         System.out.println("Digite o tempo em meses: ");
         tempo = ler.nextInt();      
