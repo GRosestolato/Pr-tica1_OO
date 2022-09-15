@@ -41,13 +41,15 @@ public class Rendimento {
     }
       
     public  void calcular(){
-       this.rendimento =  this.investInicial * Math.pow((1 + (this.taxa/100)),this.tempo);
+       double totalRendimento = getInvestInicial();
+       
+       for(int i = 0; i < getTempo();i++){
+        totalRendimento += (totalRendimento*this.taxa)/100;
+        System.out.printf("\nMês %d - rendimento/mês %.2f", (i + 1),totalRendimento);
+       }
     }
 
-    public String mostrar(){
-       return("O rendimento total da aplicação é = " + this.rendimento);
-
-    }
+    
 
     
 }
